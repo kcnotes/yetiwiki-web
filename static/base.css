@@ -1,0 +1,43 @@
+:root {
+  --bulma-primary-h: 262deg;
+  --bulma-primary-l: 69%;
+}
+
+.card {
+  --bulma-card-shadow: 0 0.1em 0.1em -0.125em hsla(0deg,0%,100%,0.1),0 0px 0 1px hsla(0deg,0%,100%,0.02);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+}
+
+.title {
+  font-family: 'Bungee', var(--bulma-family-primary);
+}
+
+.hero {
+  position: relative;
+}
+
+.yeti {
+  transform: rotate(-20deg);
+  width: 128px;
+}
+
+@media screen and (max-width: 769px) {
+  .level-right .hero-body {
+    padding: 0;
+  }
+  .yeti {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 64px;
+  }
+}
