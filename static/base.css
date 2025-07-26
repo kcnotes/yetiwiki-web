@@ -1,10 +1,30 @@
 :root {
-  --bulma-primary-h: 262deg;
-  --bulma-primary-l: 69%;
+  --bulma-primary-h: 200deg;
+  --bulma-primary-l: 13%;
 }
 
-.card {
+.wikis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.wikis .card {
   --bulma-card-shadow: 0 0.1em 0.1em -0.125em hsla(0deg,0%,100%,0.1),0 0px 0 1px hsla(0deg,0%,100%,0.02);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.card-image, .card > span {
+  width: 124px;
+  padding: 8px;
+  text-align: center;
 }
 
 body {
@@ -21,23 +41,17 @@ body {
   font-family: 'Bungee', var(--bulma-family-primary);
 }
 
-.hero {
-  position: relative;
+.main {
+  background: var(--bulma-primary);
+  padding: 40px;
+  border-radius: 16px;
 }
 
 .yeti {
-  transform: rotate(-20deg);
   width: 128px;
 }
 
-@media screen and (max-width: 769px) {
-  .level-right .hero-body {
-    padding: 0;
-  }
-  .yeti {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    width: 64px;
-  }
+.modal-card-body .container {
+  border-radius: 16px;
+  overflow: hidden;
 }

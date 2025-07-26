@@ -10,67 +10,53 @@
   <link href="./static/bulma.min.css" rel="stylesheet" type="text/css" />
   <link href="./static/base.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Bungee:400" rel="stylesheet">
-  <meta name="subject" content="Wiki hosting">
-  <meta name="description" content="Yeti Wikis is a wiki hosting platform.">
+  <meta name="subject" content="Wiki hosting for games, media and entertainment">
+  <meta name="description" content="Yeti Wikis is an independent wiki platform for games, media and entertainment. We help growing communities thrive and share knowledge.">
   <meta name="classification" content="">
-  <meta name="keywords" content="wiki, wiki hosting, yeti wikis">
+  <meta name="author" content="Yeti Wikis">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="wiki, wiki hosting, yeti wikis, maplestory, maplestory wiki, maplestoryidle, maplestoryidle wiki">
   <meta name="language" content="English">
   <meta name="distribution" content="Global">
 </head>
 
 <body>
   <div id="content">
-    <nav class="hero">
-      <div class="container is-max-widescreen">
-        <div class="level">
-          <div class="level-left">
-            <div class="hero-body">
-              <h1 class="title is-1 is-spaced">Yeti Wikis</h1>
-              <p class="subtitle is-5">A simple wiki host, for the MapleStory Wiki.</p>
-            </div>
+    <section class="section is-medium">
+      <div class="container is-max-desktop main">
+        <div class="columns is-mobile">
+          <div class="column is-four-fifths is-two-thirds-tablet is-four-fifths-mobile">
+            <h1 class="title is-1 is-spaced">Make your dream wiki.</h1>
+            <p class="subtitle is-5">Yeti Wikis is an independent wiki platform for games, media and entertainment. We help growing communities thrive and share knowledge.</p>
           </div>
-          <div class="level-right">
-            <div class="hero-body yeti-section">
-              <img src="./static/icon-medium.png" alt="Yeti Wikis logo" class="yeti" />
-            </div>
+          <div class="column is-one-third-tablet">
+            <img src="./static/icon-medium.png" alt="Yeti Wikis logo" class="yeti" />
           </div>
         </div>
-      </div>
-    </nav>
-
-    <section class="section">
-      <div class="container is-max-widescreen">
-        <div class="fixed-grid has-3-cols-desktop has-2-cols-tablet has-1-cols-mobile">
-          <div class="grid">
-            <div class="cell">
-              <div class="card">
-                <div class="card-image">
-                  <a href="https://maplestorywiki.net/">
-                    <figure class="image is-2by1">
-                      <img src="./static/maplestorywiki.png" alt="MapleStory Wiki" />
-                    </figure>
-                  </a>
-                </div>
-                <footer class="card-footer">
-                  <a href="https://maplestorywiki.net/" class="card-footer-item">MapleStory Wiki</a>
-                </footer>
+        <div class="wikis">
+          <a href="https://maplestorywiki.net/">
+            <div class="card" style="background: linear-gradient(to right top, rgba(116, 193, 255, 1) 0%, rgba(181, 242, 255, 1) 100%)">
+              <div class="card-image">
+                  <figure class="image is-1by1">
+                    <img src="https://media.maplestorywiki.net/logos/maplestory/1x.png" alt="MapleStory Wiki" />
+                  </figure>
               </div>
             </div>
-            <div class="cell">
-              <div class="card">
-                <div class="card-image">
-                  <a href="/contact">
-                    <figure class="image is-2by1">
-                      
-                    </figure>
-                  </a>
-                </div>
-                <footer class="card-footer">
-                  <a href="/contact" class="card-footer-item">Create a wiki</a>
-                </footer>
+          </a>
+          <a href="https://idle.maplestorywiki.net/">
+            <div class="card" style="background: linear-gradient(to right top, rgba(255, 234, 150, 1) 0%, rgba(233, 242, 120, 1) 100%)">
+              <div class="card-image">
+                  <figure class="image is-1by1">
+                    <img src="https://media.maplestorywiki.net/logos/maplestoryidle/1x.png" alt="MapleStory Idle RPG Wiki" />
+                  </figure>
               </div>
             </div>
-          </div>
+          </a>
+          <a onClick="document.querySelector('.modal').classList.add('is-active')" style="color: #FFF">
+            <div class="card">
+              <span>Request a wiki</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -79,11 +65,20 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p class="is-size-7">
-        &copy; 2024 Yeti Wikis. MapleStory is a trademark of Nexon Corporation and is used with
-        permission.
+        &copy; 2025 Yeti Wikis
       </p>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <div class="modal-card-body">
+        <div class="container is-max-widescreen">
+          <iframe data-tally-src="https://tally.so/embed/wbLgD6?alignLeft=1&dynamicHeight=1" loading="lazy" width="100%" height="589" frameborder="0" marginheight="0" marginwidth="0" title="Contact us"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" onClick="document.querySelector('.modal').classList.remove('is-active')" aria-label="close"></button>
+  </div>
 </body>
-
 </html>
