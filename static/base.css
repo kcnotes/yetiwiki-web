@@ -1,6 +1,13 @@
 :root {
   --bulma-primary-h: 200deg;
-  --bulma-primary-l: 13%;
+  --bulma-primary-l: 95%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bulma-primary-h: 200deg;
+    --bulma-primary-l: 13%;
+  }
 }
 
 .wikis {
