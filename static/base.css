@@ -60,9 +60,19 @@ body {
   width: 128px;
 }
 
-.modal-card-body .container {
+.modal-card-body {
+  background: #ededed;
   border-radius: 16px;
-  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+}
+.modal-close::after, .modal-close::before {
+  background-color: #000;
 }
 
 .modal-card-body progress {

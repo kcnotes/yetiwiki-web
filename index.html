@@ -72,6 +72,7 @@
   <div class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
+      <button class="modal-close is-large" onClick="document.querySelector('.modal').classList.remove('is-active')" aria-label="close"></button>
       <div class="modal-card-body">
         <progress class="progress is-small is-primary" max="100">Loading</progress>
         <div class="container is-max-widescreen">
@@ -79,7 +80,6 @@
         </div>
       </div>
     </div>
-    <button class="modal-close is-large" onClick="document.querySelector('.modal').classList.remove('is-active')" aria-label="close"></button>
   </div>
 </body>
 </html>
