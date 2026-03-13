@@ -46,7 +46,7 @@ body {
   flex: 1;
 }
 
-.title {
+.title, .navbar-brand strong {
   font-family: 'Bungee', var(--bulma-family-primary);
 }
 
